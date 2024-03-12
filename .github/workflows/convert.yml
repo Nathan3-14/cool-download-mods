@@ -18,6 +18,7 @@ jobs:
                     tar cf ${file}.tar ${file}
                     mv ${file}.tar zip
                 done
+                git pull
                 git add ./zip/*
             - run: |
                 git config user.name "cool-test"
