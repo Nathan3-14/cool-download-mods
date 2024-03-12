@@ -15,7 +15,7 @@ jobs:
                 do
                     echo $file
                     tar czf ${file}.tar.gz ${file}
-                    mv ${file} zip
+                    mv ${file}.tar.gz zip
                 done
                 echo "</debug>"
                 ls ./zip
