@@ -15,8 +15,8 @@ jobs:
             - run: |
                 for file in ./src/*
                 do
-                    tar cf ${file}.tar ${file}
-                    mv ${file}.tar zip
+                    zip ${file}.zip ${file}
+                    mv ${file}.zip zip
                 done
                 git pull
                 git add ./zip/*
