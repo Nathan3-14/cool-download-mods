@@ -11,16 +11,11 @@ jobs:
         steps:        
             - uses: actions/checkout@v4
             - run: |
-                echo "<debug>"
                 for file in ./src/*
                 do
-                    echo $file
                     tar czf ${file}.tar.gz ${file}
                     mv ${file}.tar.gz zip
                 done
-                echo "</debug>"
-                ls ./zip
-                
                 git add ./zip/*
             - run: |
                 git config user.name "cool-test"
