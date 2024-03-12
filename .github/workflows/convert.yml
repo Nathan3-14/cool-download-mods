@@ -1,0 +1,12 @@
+name: Convert
+run-name: Converting mods
+on: [
+    push
+]
+jobs:
+    convert:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - run: |
+                echo "Cool"
