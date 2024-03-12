@@ -10,7 +10,7 @@ jobs:
             - uses: actions/checkout@v4
             - run: |
                 echo "<debug>"
-                for file in ./src
+                for file in src
                 do
                 echo $file
                 done
