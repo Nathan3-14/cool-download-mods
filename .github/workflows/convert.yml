@@ -1,8 +1,10 @@
 name: Convert
 run-name: Converting mods
-on: [
-    push
-]
+on: 
+    push:
+        paths:
+            - src/**
+
 permissions:
     contents: write
 jobs:
