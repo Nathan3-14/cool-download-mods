@@ -3,11 +3,12 @@ run-name: Converting mods
 on: [
     push
 ]
+permissions:
+    contents: write
 jobs:
     convert:
         runs-on: ubuntu-latest
-        steps:
-            
+        steps:        
             - uses: actions/checkout@v4
             - run: |
                 echo "<debug>"
