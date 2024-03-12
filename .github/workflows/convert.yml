@@ -13,6 +13,8 @@ jobs:
                 for file in ./src/*
                 do
                     echo $file
+                    tar czf zip/$file.tar.gz $file
                 done
                 echo "</debug>"
+                ls ./zip
 
