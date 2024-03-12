@@ -1,3 +1,3 @@
-from classes import *
-from objects import *
-from methods import *
+from .classes import *
+from .objects import *
+from .methods import *
