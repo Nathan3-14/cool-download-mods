@@ -1,1 +1,2 @@
-print(input("> "))
+_input = input("> ")
+print(_input)
