@@ -26,4 +26,5 @@ jobs:
                 git config user.name "cool-test"
                 git config user.email "nathan.watson.172@gmail.com"
                 git commit -m "Cool Test!!!!!!!!!!"
+                git push
 
