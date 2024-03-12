@@ -7,10 +7,7 @@ jobs:
     convert:
         runs-on: ubuntu-latest
         steps:
-            - run: |
-                git config user.name "cool-test"
-                git config user.email "nathan.watson.172@gmail.com"
-
+            
             - uses: actions/checkout@v4
             - run: |
                 echo "<debug>"
@@ -24,5 +21,8 @@ jobs:
                 ls ./zip
                 
                 git add ./zip/*
+            - run: |
+                git config user.name "cool-test"
+                git config user.email "nathan.watson.172@gmail.com"
                 git commit -m "Cool Test!!!!!!!!!!"
 
