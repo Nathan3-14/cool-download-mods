@@ -13,7 +13,7 @@ jobs:
         steps:        
             - uses: actions/checkout@v4
             - run: |
-                for file in ./src/*
+                for file in ./mods/*
                 do
                     echo "Zipping ${file}"
                     zip -r ${file}.zip ${file}
