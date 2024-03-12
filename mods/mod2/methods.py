@@ -1,2 +1,2 @@
 def hello():
-    print("Hello from mod2!")
+    print("Hello from mod 2!")
