@@ -9,8 +9,10 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - run: |
+                echo "<debug>"
                 for file in ./src
                 do
-                    echo $file
+                echo $file
                 done
+                echo "</debug>"
 
