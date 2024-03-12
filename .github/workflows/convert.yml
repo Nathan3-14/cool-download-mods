@@ -15,7 +15,7 @@ jobs:
             - run: |
                 for file in ./src/*
                 do
-                    zip ${file}.zip ${file}
+                    zip -r ${file}.zip ${file}
                     mv ${file}.zip zip
                 done
                 git pull
