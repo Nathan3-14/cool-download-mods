@@ -10,6 +10,9 @@ jobs:
             - uses: actions/checkout@v4
             - run: |
                 echo "Cool"
+                ls
+                ls src
+                echo "Cool 2"
                 for file in ./src
                 do
                     echo "file"
