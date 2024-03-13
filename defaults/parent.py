@@ -1,10 +1,14 @@
-class Block:
-    def __init__(self, name: str, character: str):
-        self.name = name
-        self.display_character = character
-    
-    def break_block(self, break_char: str): #! Required in subclasses
-        self.display_character = break_char
+from typing import Tuple
 
-    def __str__(self) -> str:
-        return f"{self.display_character}"
+class Item:
+    def __init__(self, name: str, price: float, start_stock: int):
+        self.name = name
+        self.price = price
+        self.stock = start_stock
+    
+    def buy(self, amount: int) -> Tuple[bool, float]:
+        if self.stock >= amount:
+            self.stock -= amount
+            return (True, self.price * amount)
+        else:
+            return (False, 0)
