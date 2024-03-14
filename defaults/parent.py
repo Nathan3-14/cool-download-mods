@@ -12,3 +12,6 @@ class Item:
             return (True, self.price * amount)
         else:
             return (False, 0)
+    
+    def __str__(self) -> str:
+        return self.name
