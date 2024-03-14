@@ -7,3 +7,5 @@ class Wood(Item):
 class Stone(Item):
     def __init__(self, start_stock: int):
         super().__init__("stone", 10.50, start_stock)
+
+shop_items = [Wood, Stone]
