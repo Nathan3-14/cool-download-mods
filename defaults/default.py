@@ -12,3 +12,7 @@ class B(Block):
     def __init__(self):
         super().__init__("B")
         self.position[0] -= 1
+
+class Empty:
+    def __str__(self) -> str:
+        return " "
