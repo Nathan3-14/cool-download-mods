@@ -17,7 +17,4 @@ class B(Block):
 
 class Empty(Block):
     def __init__(self) -> None:
-        pass
-
-    def __str__(self) -> str:
-        return " "
+        super().__init__(" ")
